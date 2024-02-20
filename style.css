@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1092px;    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+    border-radius: 5px;
+    background-color: rgba(135, 57, 88, 0.672);
+}
+header ul{
+    list-style-type:  none;
+    width: 100%;
+    max-width: 1092px;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color, cubic-bezier(0.25, 0.46, 0.45, 0.94), 0.5s;
+}
+header li:hover{
+    background-color: rgba(72, 30, 47, 0.716);
+}
+
+
+canvas{
+    margin: 10px;
+}
+.welcome__info{
+    color: white;
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    height: 500px;
+}
+.welcome{
+    width: 100%;
+    background-position: center;
+    background-size: 100%, cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/space.png');
+}
+
+.skills{
+    padding: 100px;
+    background-size:100%, cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/skillsnew.webp');
+}
+
+.skills_title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+
+.skills_info{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.skills_info ul{
+    background-color: gray;
+    box-sizing: border-box;
+    border-radius: 5%;
+    font-size: 35px;
+    padding: 20px;
+    margin: 0;
+    list-style-type:  none;
+    border: solid black 5px;
+}
+
+.skills_info li{
+    margin: 40px;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    height: 35px;
+    background: #1da1f2;
+    box-shadow: 2px 14px 15px -7px rgba(30, 166, 250, 0.36);
+    border-radius: 50px;
+    width: 40%;
+    align-self: center;
+    color: white;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+/* .welcome__img .img{
+    z-index: 2;
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
+} */
+
+
+
