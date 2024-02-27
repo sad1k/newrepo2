@@ -1,21 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/first_block_style.css">
+    <link rel="stylesheet" href="css/first_block_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="first_block.js" defer></script>
-</head>
-<body>
-    <section class="layers">
+    <script src="animation.js" defer></script>
+  </head>
+  <body>
+    <div class="page" id="fullpage">
+  
+      <div class="layers " id="layers">
         <div class="layers__container">
-            <div class="layers__item layer-1" style="background-image: url(img_1/layer1.png);"></div>
-            <div class="layers__item layer-2"></div>
-            <div class="layers__item layer-3" style="background-image: url(img_1/layer3.png); opacity: 0.2;" ></div>
-            <div class="layers__item layer-4"></div>
+          <div
+            class="layers__item layer-1"
+            style="background-image: url(img_1/layer1.png)"
+          ></div>
+          <div class="layers__item layer-2">
+            <div
+              class="hero-content element-animation"
+              style="--color: rgb(234, 180, 31)"
+            >
+              I'm Misha frontend developer.
+              <div class="hero-content__p" style="--color: rgb(31, 198, 234)">
+                <p>
+                  I like programming and creating the responsive cool websites.
+                  So, if you want to contact come
+                  <a
+                    href="#contacts"
+                    style="text-decoration: none; color: var(--color)"
+                    >here</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="layers__item layer-3 "
+            style="background-image: url(img_1/layer3.png); opacity: 0.2"
+          ></div>
         </div>
-    </section>
-    <div style="height: 100vh;"> </div>
-</body>
+      </div>
+      <div class="container">
+        <div class="my_skills element-animation">
+          <div class="progress-bars">
+            <div
+              class="card element-animation"
+              style="--color1: #0000ff; --color2: #66ffff"
+            >
+              <div class="logo">
+                <span
+                  class="circle"
+                  style="--circle_color: rgba(15, 153, 199, 0.456)"
+                >
+                  <img
+                    src="./img_1/react.png"
+                    alt=""
+                    width="40px"
+                    height="38px"
+                  />
+                </span>
+              </div>
+              <span>React</span>
+              <div class="skill">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number" id="number">20%</div>
+                  </div>
+                </div>
+
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#DA22FF" />
+                      <stop offset="100%" stop-color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    style="--stroke-offset: 245.5"
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="card element-animation"
+              style="--color1: #b3b300; --color2: #f2f2f2"
+            >
+              <div class="logo">
+                <span class="circle">
+                  <img src="./img_1/js.png" alt="" width="40px" height="38px" />
+                </span>
+              </div>
+              <span>JS</span>
+              <div class="skill">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number" id="number1">45%</div>
+                  </div>
+                </div>
+
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#DA22FF" />
+                      <stop offset="100%" stop-color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    style="--stroke-offset: 205.5"
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="card element-animation"
+              style="--color1: #ff471a; --color2: #ff944d"
+            >
+              <div class="logo">
+                <span
+                  class="circle"
+                  style="--circle_color: rgba(238, 135, 10, 0.644)"
+                >
+                  <img
+                    src="./img_1/html.png"
+                    alt=""
+                    width="40px"
+                    height="38px"
+                  />
+                </span>
+              </div>
+              <span>HTML</span>
+              <div class="skill">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number" id="number2">40%</div>
+                  </div>
+                </div>
+
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#DA22FF" />
+                      <stop offset="100%" stop-color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    style="--stroke-offset: 210.5"
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="card element-animation"
+              style="--color1: #0000ff; --color2: #66ffff"
+            >
+              <div class="logo">
+                <span
+                  class="circle"
+                  style="--circle_color: rgba(10, 238, 215, 0.424)"
+                >
+                  <img
+                    src="./img_1/css.png"
+                    alt=""
+                    width="40px"
+                    height="38px"
+                  />
+                </span>
+              </div>
+              <span>CSS</span>
+              <div class="skill">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number" id="number3">40%</div>
+                  </div>
+                </div>
+
+                <svg
+                  xmlns="https://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#DA22FF" />
+                      <stop offset="100%" stop-color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    style="--stroke-offset: 210.5"
+                    cx="40"
+                    cy="40"
+                    r="35"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="quote">
+            <span class="first element-animation">
+              <i>It is difficult to understand the universe </i>
+            </span>
+            <span class="second element-animation">
+              <i>if you only study one planet...</i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="about element-animation">
+        My Contacts
+        <div class="contact" id="contacts">
+          <div class="link discord">
+            <div class="icon">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="text">po123</div>
+          </div>
+          <div class="link vk">
+            <div class="icon">
+              <i class="fa-brands fa-vk"></i>
+            </div>
+            <div class="text"><a href="https://vk.com/id692871022">VK</a></div>
+          </div>
+          <div class="link github">
+            <div class="icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="text">
+              <a href="https://github.com/sad1k">Github</a>
+            </div>
+          </div>
+          <div class="link google">
+            <div class="icon">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="text">
+              <a href="mailto:misha.kirillov.0990@gmail.com">Gmail</a>
+            </div>
+          </div>
+        </div>
+        The only thing we have to fear is fear itself. -Franklin D. Roosevelt
+      </div>
+    </div>
+  
+  </body>
 </html>
